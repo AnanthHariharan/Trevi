@@ -20,3 +20,7 @@ class BaseEnv(gym.Env, abc.ABC):
     def set_task(self, task):
         """Sets the environment to a specific task."""
         pass
+    @abc.abstractmethod
+    def get_task(self):
+        """Returns the current task of the environment."""
+        pass
