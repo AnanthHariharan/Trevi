@@ -5,7 +5,11 @@ import torch.nn.functional as F
 from typing import Dict, List, Tuple, Optional, Any
 import numpy as np
 
-from ...core.skill import Skill, SkillLibrary
+import sys
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
+
+from core.skill import Skill, SkillLibrary
 
 
 class OptionCriticAgent:

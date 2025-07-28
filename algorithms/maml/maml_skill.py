@@ -5,7 +5,11 @@ from typing import Dict, List, Tuple, Any, Optional
 import copy
 import numpy as np
 
-from ...core.skill import Skill, ParametricSkill, SkillLibrary
+import sys
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
+
+from core.skill import Skill, ParametricSkill, SkillLibrary
 
 
 class MAMLSkillLearner:

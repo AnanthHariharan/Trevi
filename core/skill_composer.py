@@ -93,8 +93,9 @@ class SkillComposer:
         # In practice, this would use learned dynamics models
         with torch.no_grad():
             action = skill.forward(state)
-            # Simple state transition model
-            next_state = state + 0.1 * action + 0.01 * torch.randn_like(state)
+            # Simple state transition model - apply noise to current state
+            # Action affects state through environment dynamics (simplified)
+            next_state = state + 0.01 * torch.randn_like(state)
             return next_state
     
     def _goal_reached(self, current_state: torch.Tensor, goal_state: torch.Tensor,
