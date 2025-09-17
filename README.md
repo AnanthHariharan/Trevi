@@ -1,4 +1,4 @@
-# Meta-Learning for Hierarchical Skill Acquisition and Composition
+# Trevi – Meta-Learning for Hierarchical Skill Acquisition and Composition
 
 A research framework for combining meta-learning with hierarchical reinforcement learning to learn reusable skills that can be quickly composed for complex, long-horizon tasks.
 
